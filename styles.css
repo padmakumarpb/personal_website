@@ -4,3 +4,54 @@
     overflow: hidden;
     position: relative;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centers icons horizontally */
+}
+
+.social-icons a {
+    color: inherit; /* Keeps the original color of the icons */
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 2rem; /* Sets the size of the icons */
+    margin: 0 15px; /* Sets space between the icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+}
+
+.social-icons a:hover i {
+    transform: translateY(-10px); /* Moves the icon up by 10px on hover */
+    color: #007bff; /* Optional: Change color on hover */
+}
+
+.text-center {
+    text-align: center; /* Centers text or content */
+}
+
+#map {
+    height: 12rem; /* Height of the map container */
+    background-color: #ddd; /* Background color for the map container */
+    width: 100%;
+}
+
+#map iframe {
+    width: 100%; /* Full width of the map container */
+    height: 100%; /* Full height of the map container */
+    border: 0; /* Remove border around the iframe */
+}
+
+/* Adjust the map's size for different screen sizes */
+@media (max-width: 767px) {
+    #map {
+        width: 100%; /* Full width of the viewport for small screens */
+    }
+}
+
+@media (min-width: 768px) {
+    #map {
+        width: 100%; /* Full width of the parent container for larger screens */
+    }
+}
+
+.adress-text{
+    text-align: left;
+}
