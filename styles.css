@@ -13,8 +13,8 @@
 .social-icons a {
     color: inherit; /* Keeps the original color of the icons */
     text-decoration: none; /* Removes the underline from the links */
-    font-size: 2rem; /* Sets the size of the icons */
-    margin: 0 15px; /* Sets space between the icons */
+    font-size: 1.8rem; /* Sets the size of the icons */
+    margin: 0 10px; /* Sets space between the icons */
     transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
 }
 
@@ -54,4 +54,19 @@
 
 .adress-text{
     text-align: left;
+}
+
+#education-section .card {
+    min-height: 90%; /* Ensure all cards have at least this height */
+}
+
+/* Increase the height of the footer */
+footer.bg-info {
+    height: 100px; /* Adjust the height as needed */
+    padding: 20px 0; /* Optional: Add padding for better content spacing */
+}
+
+/* Adjust vertical alignment of the content */
+footer .d-flex {
+    height: 3.5rem; /* Ensures the content fills the footer height */
 }
